@@ -40,13 +40,23 @@ public class MathUtilTest {
      * Test of mdc method, of class MathUtil.
      */
     @Test
-    void testMdc() {
+    void testMdcAPar() {
         final double a = 8, b = 2;
         final double esperado = 2;
         final double obtido = MathUtil.mdc(a, b);
         
         assertEquals(esperado, obtido);
         
+    }
+
+    @Test
+    void testMdcAImpar(){
+        int a = 9;
+        int b = 3;
+        int esperado = 3;
+        int obtido = MathUtil.mdc(a, b);
+
+        assertEquals(esperado, obtido);
     }
     
 }
