@@ -10,9 +10,8 @@ package com.mycompany.mdc;
  */
 public class MathUtil {
     public static double mdc(double a, double b){
-        if(b > 0){
-            if(a % b == 0)
-                return b;
+        if (b > 0 && a % b == 0){
+            return b;
         }
         
         return -1;
